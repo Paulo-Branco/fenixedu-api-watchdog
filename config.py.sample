@@ -1,0 +1,51 @@
+# coding=utf-8
+BASE_API_URL = "https://fenix.tecnico.ulisboa.pt/api/fenix/v1/"
+ENDPOINTS = {
+    "public": [
+        "about",
+        "academicterms",
+        "canteen",
+        "contacts",
+        "degrees",
+        "domainModel",
+        "parking",
+        "shuttle",
+        "spaces"
+    ],
+    "private": [
+        "person",
+        "person/courses",
+        "person/curriculum",
+        "person/evaluations",
+        "person/calendar/classes",
+        "person/calendar/evaluations"
+    ],
+    "alert_email": "abc@tecnico.ulisboa.pt"
+}
+PARKS = {
+    "Alameda": [
+        {
+            "email": "alameda@abc.pt",
+            "subject": "Informação de parque de estacionamento desactualizada",
+            "content": "ABC"
+        }
+    ],
+    "Arco do Cego": [
+        {
+            "email": "taguspark@abc.pt",
+            "subject": "Informação de parque de estacionamento desactualizada",
+            "content": "ABC"
+        }
+    ]
+}
+
+# Email settings
+EMAIL_FROM = "abc@tecnico.ulisboa.pt"
+SMTP_SERVER = "mail.tecnico.ulisboa.pt"
+SMTP_USER = "user_placeholder@tecnico.ulisboa.pt"
+SMTP_PASSWORD = "pwd_placeholder"
+
+# FenixEdu External Authorization
+CLIENT_ID = "_client_id"
+CLIENT_SECRET = "_client_secret"
+REFRESH_TOKEN = "_refresh_token"
